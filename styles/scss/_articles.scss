@@ -1,0 +1,13 @@
+.articles{
+    margin: 20px 0;
+    @include lg-tablet{
+        margin: 0;
+    }
+    &-wrapper{
+        margin: 20px 0;
+        @include lg-tablet{
+            padding: 60px 0 120px 0;
+            @include grid(1fr 1fr, auto, 60px 148px)
+        }
+    }
+}

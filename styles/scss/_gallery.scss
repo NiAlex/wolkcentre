@@ -1,0 +1,29 @@
+.gallery{
+    @include flex(column, center, space-between, wrap);
+    @include md-tablet{
+        padding: 120px 0;
+    }
+    &-wrapper{
+        @include flex(column, center, space-between, wrap);
+        @include md-tablet{
+            @include grid (1fr 1fr, auto, 50px);
+            margin: 0 auto;
+        }
+        @include lg-desktop{
+            @include grid (1fr 1fr 1fr 1fr, auto, 84px);
+        }
+    }
+    &__img-wrapper{
+        width: 173px;
+        height: 80px;
+        @extend %bg-cover;
+        transition: transform 0.5s;
+        margin: 20px 0;
+        &:hover{
+            transform: scale(1.4);
+        }
+        @include md-tablet{
+            margin: 0;
+        }
+    }
+}

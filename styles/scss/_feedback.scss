@@ -1,0 +1,18 @@
+.feedback{
+    &-wrapper{
+        @include flex(row, center, space-between, wrap);
+        padding: 60px 0;
+        @include md-tablet{
+            padding: 120px 0;
+        }
+    }
+    &-info{
+        max-width: 943px;
+    }
+}
+.btn-wrapper{
+    margin-top: 20px;
+    @include md-tablet{
+        margin: 0;
+    }
+}

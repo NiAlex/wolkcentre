@@ -1,0 +1,85 @@
+html,
+body
+{
+    font-family: Montserrat, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", sans-serif;
+    font-weight: 400;
+    color: $main-text-c;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.container
+{
+    margin: 0 auto;
+    max-width: 1520px;
+    padding: 15px;
+}
+
+.btn{
+    font-size: 15px;
+    width: 130px;
+    height: 40px;
+    border-radius: 6px;
+    transition: all 0.3s;
+    &--bg-white{
+        background: $main-c--light;
+        border: 1px solid $main-c--dark;
+        color: $main-c--dark;
+        &:hover{
+            background: $main-c--dark;
+            color: $main-c--light;
+        }
+    }
+    &--bg-blue{
+        background: $main-c--dark;
+        color: $main-c--light;
+        &:hover{
+            background: $main-c--light;
+            border: 1px solid $main-c--dark;
+            color: $main-c--dark;
+        }
+    }
+    &--margin{
+        margin: 10px 45px 10px 0;
+    }
+}
+
+.title{
+    font-weight: 700;
+    &--lg{
+        font-size: 24px;
+        line-height: 32px;
+        @include md-tablet{
+            font-size: 48px;
+            line-height: 72px;
+        }
+    }
+    &--sm{
+        font-size: 20px;
+        line-height: 18px;
+        @include md-tablet{
+            font-size: 24px;
+            line-height: 36px;
+        }
+    }
+    &--max-width{
+        max-width: 750px;
+    }
+}
+
+.subtitle{
+    @include lg-tablet{
+        margin: 24px 0 32px 0;
+    }
+    &--lg{
+        @include lg-tablet{
+            font-size: 36px;
+            line-height: 50px;
+        }
+    }
+}
+.block{
+    &--bg-gray{
+        background: $bg;
+    }
+}

@@ -1,0 +1,37 @@
+.header{
+    @include md-tablet{
+        @include flex(row, center, space-between, wrap);
+    }
+}
+.logo{
+    width: 100px;
+    height: 35px;
+    margin: 5px 70px 5px 0;
+    &-nav-wrapper{
+        margin-bottom: 15px;
+        @include md-tablet{
+            @include flex(row, center, space-between, wrap);
+        }
+        @include md-desktop{
+            margin: 0;
+        }
+}
+}
+.nav__link{
+    font-size: 15px;
+    margin: 15px 0;
+    color: $main-c--dark;
+    &:not(:last-child){
+        padding-right: 5px;
+    }
+    @include md-tablet{
+            margin: 5px 0;
+            &:not(:last-child){
+                padding-right: 40px;
+            }
+    }
+    &:hover{
+        opacity: 0.8;
+        text-decoration: none;
+    }
+}

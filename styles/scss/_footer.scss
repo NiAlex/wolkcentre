@@ -1,0 +1,28 @@
+.footer{
+    margin-top: 40px;
+    border-top: 1px solid $border-c;
+    @include md-tablet{
+        margin-top: 192px;
+    }
+    @include flex (column, center, center, nowrap);
+    padding: 20px 0 40px 0;
+    @include md-tablet{
+        padding: 80px 0 120px;
+    }
+}
+.media{
+    display: inline-block;
+    width: 44px;
+    height: 44px;
+    @extend %bg-cover;
+    &:not(:last-child){
+        margin-right: 20px;
+    }
+    &-wrapper{
+        @include flex(row, center, space-between, nowrap);
+        margin-bottom: 40px;
+    }
+    &:hover{
+        opacity: 0.8;
+    }
+}
